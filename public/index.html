@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seizure Support Chatbot | Kidogo cha Mvua</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <div class="header-top">
+        <h1>Seizure Support Chatbot</h1>
+        <button id="languageToggle" class="language-btn" aria-label="Toggle language">Swahili / English</button>
+      </div>
+      <p id="headerSubtitle">For Kenyan parents supporting children with epilepsy and disabilities.</p>
+    </header>
+
+    <main>
+      <section class="chat-panel">
+        <div id="chatArea" class="chat-area" role="log" aria-label="Chat conversation"></div>
+        <div class="input-row">
+          <input id="userInput" type="text" placeholder="Type a message..." autocomplete="off" aria-label="Message input" />
+          <button id="sendButton" aria-label="Send message">Send</button>
+        </div>
+      </section>
+
+      <section class="log-panel">
+        <div class="log-header">
+          <h2 id="logTitle">Seizure Log</h2>
+          <button id="viewLogsButton" aria-label="Refresh seizure logs">Refresh Logs</button>
+        </div>
+        <div id="logArea" class="log-area" role="region" aria-label="Saved seizure logs"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
